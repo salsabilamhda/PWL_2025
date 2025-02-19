@@ -23,7 +23,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', [WelcomeController::class,'hello']);
+//Menampilkan View dari Controller
+Route::get('/greeting', [WelcomeController::class, 
+'greeting']); 
 
 Route::get('/world', function () { 
     return 'World'; 
