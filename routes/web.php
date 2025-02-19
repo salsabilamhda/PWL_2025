@@ -52,3 +52,8 @@ Route::get('/user/{name?}', function ($name='John') {
 
 //resource controller 
 Route::resource('photos', PhotoController::class); 
+
+//Membuat view
+Route::get('/greeting', function () { 
+    return view('hello', ['name' => 'Salsabila Mahda']); 
+    });
