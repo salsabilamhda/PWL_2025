@@ -55,5 +55,5 @@ Route::resource('photos', PhotoController::class);
 
 //Membuat view
 Route::get('/greeting', function () { 
-    return view('hello', ['name' => 'Salsabila Mahda']); 
-    });
+    return view('blog.hello', ['name' => 'Salsabila Mahda']); 
+    }); 
